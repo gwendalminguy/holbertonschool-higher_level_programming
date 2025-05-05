@@ -10,4 +10,4 @@ elif last > 5:
     end = "greater than 5"
 else:
     end = "less than 6 and not 0"
-print(f"The last digit of {number} is {last} and is {end}")
+print(f"Last digit of {number} is {last} and is {end}")
