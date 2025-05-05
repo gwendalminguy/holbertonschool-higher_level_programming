@@ -1,3 +1,5 @@
 #!/usr/bin/python3
+alphabet = ""
 for i in "abcdefghijklmnopqrstuvwxyz":
-    print(i, end="")
+    alphabet += i
+print(alphabet, end="")
