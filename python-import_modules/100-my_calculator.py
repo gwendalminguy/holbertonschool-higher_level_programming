@@ -4,16 +4,16 @@ from sys import argv
 
 
 def main():
-    if len(argv) != 4:
+    if len(argv) - 1 != 3:
         print(len(argv))
-        print("Usage: ./100-my_calculator.py a operator b")
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
 
     a = int(argv[1])
     b = int(argv[3])
-    op = argv[2]
+    operator = argv[2]
 
-    match op:
+    match operator:
         case '+':
             result = add(a, b)
         case '-':
@@ -26,7 +26,7 @@ def main():
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
 
-    print("{} {} {} = {}".format(a, op, b, result))
+    print("{} {} {} = {}".format(a, operator, b, result))
 
 
 if __name__ == "__main__":
