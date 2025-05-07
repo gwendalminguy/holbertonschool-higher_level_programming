@@ -6,7 +6,7 @@ from sys import argv
 def main():
     if len(argv) != 4:
         print(len(argv))
-        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
+        print("Usage: ./100-my_calculator.py a operator b")
         exit(1)
 
     a = int(argv[1])
@@ -15,13 +15,13 @@ def main():
 
     match op:
         case '+':
-            result = add(a, b)
+            result = float(add(a, b))
         case '-':
-            result = sub(a, b)
+            result = float(sub(a, b))
         case '*':
-            result = mul(a, b)
+            result = float(mul(a, b))
         case '/':
-            result = div(a, b)
+            result = float(div(a, b))
         case _:
             print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
