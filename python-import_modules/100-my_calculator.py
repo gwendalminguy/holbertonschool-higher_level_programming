@@ -15,11 +15,11 @@ def main():
 
     match op:
         case '+':
-            result = float(add(a, b))
+            result = add(a, b)
         case '-':
-            result = float(sub(a, b))
+            result = sub(a, b)
         case '*':
-            result = float(mul(a, b))
+            result = mul(a, b)
         case '/':
             result = float(div(a, b))
         case _:
