@@ -5,7 +5,6 @@ from sys import argv
 
 def main():
     if len(argv) - 1 != 3:
-        print(len(argv))
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
 
@@ -13,18 +12,17 @@ def main():
     b = int(argv[3])
     operator = argv[2]
 
-    match operator:
-        case '+':
-            result = add(a, b)
-        case '-':
-            result = sub(a, b)
-        case '*':
-            result = mul(a, b)
-        case '/':
-            result = float(div(a, b))
-        case _:
-            print("Unknown operator. Available operators: +, -, * and /")
-            exit(1)
+    if operator == '+':
+        result = add(a, b)
+    elif operator == '-':
+        result = sub(a, b)
+    elif operator == '*':
+        result = mul(a, b)
+    elif operator == '/':
+        result = float(div(a, b))
+    else:
+        print("Unknown operator. Available operators: +, -, * and /")
+        exit(1)
 
     print("{} {} {} = {}".format(a, operator, b, result))
 
