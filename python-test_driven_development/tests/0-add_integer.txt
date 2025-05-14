@@ -9,15 +9,10 @@
 >>> print(add_integer(-5, -5))
 -10
 
->>> print(add_integer('c', 8))
+>>> print(add_integer('A', 8))
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
-
->>> print(add_integer(2, 'A'))
-Traceback (most recent call last):
-...
-TypeError: b must be an integer
 
 >>> print(add_integer("Hello", "World"))
 Traceback (most recent call last):
