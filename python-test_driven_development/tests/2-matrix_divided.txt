@@ -21,8 +21,18 @@ Zero As Divisor
 	...
 	ZeroDivisionError: division by zero
 
-Character As Divisor
---------------------
+List Of Integers As Matrix
+--------------------------
+
+.. code-block:: python
+
+	>>> print(matrix_divided([1, 2], 1))
+	Traceback (most recent call last):
+        ...
+	TypeError: object of type 'int' has no len()
+
+Use Of Character
+----------------
 
 .. code-block:: python
 
