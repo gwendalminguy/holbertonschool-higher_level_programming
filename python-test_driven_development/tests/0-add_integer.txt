@@ -29,3 +29,8 @@ TypeError: a must be an integer
 
 >>> print(add_integer(2, -8))
 -6
+
+>>> print(add_integer(Hello))
+Traceback (most recent call last):
+...
+NameError: name 'Hello' is not defined
