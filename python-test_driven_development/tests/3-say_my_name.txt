@@ -1,0 +1,57 @@
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Regular Strings
+---------------
+
+.. code-block:: python
+
+	>>> say_my_name("Gwendal")
+	My name is Gwendal 
+
+	>>> say_my_name("Gwendal", "Minguy-Pèlerin")
+	My name is Gwendal Minguy-Pèlerin
+
+Wrong Type As First Name
+------------------------
+
+.. code-block:: python
+
+	>>> say_my_name(1, "World")
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+	>>> say_my_name(["Hello"], "World")
+	Traceback (most recent call last):
+	...
+	TypeError: first_name must be a string
+
+Wrong Type As Last Name
+-----------------------
+
+.. code-block:: python
+
+        >>> say_my_name("Hello", 1)
+        Traceback (most recent call last):
+        ...
+        TypeError: last_name must be a string
+
+        >>> say_my_name("Hello", ["World"])
+        Traceback (most recent call last):
+        ...
+        TypeError: last_name must be a string
+
+Wrong Arguments Number
+----------------------
+
+.. code-block:: python
+
+	>>> say_my_name()
+	Traceback (most recent call last):
+        ...
+	TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+        >>> say_my_name("Hello", "World", "Again")
+        Traceback (most recent call last):
+        ...
+	TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
