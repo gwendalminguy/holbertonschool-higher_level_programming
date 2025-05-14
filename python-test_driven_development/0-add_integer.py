@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+
+"""
+0-add_integer.py
+Module containing a function adding two integers.
+"""
+
 def add_integer(a, b=98):
     """
     Adds two integers.
