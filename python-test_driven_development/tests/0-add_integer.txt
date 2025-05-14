@@ -24,7 +24,8 @@ Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
->>> print(add_integer("8", "2"))
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
+>>> print(add_integer(1.5, 1.5))
+2
+
+>>> print(add_integer(2, -8))
+-6
