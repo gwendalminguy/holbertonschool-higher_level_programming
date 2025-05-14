@@ -1,5 +1,14 @@
 #!/usr/bin/python3
 def matrix_divided(matrix, div):
+    """
+    Divides each integer from a matrix by another integer.
+
+    Parameters:
+    matrix (list): list of lists of integers to divide
+    div (int): integer to use as divisor
+
+    Return: new matrix of the results
+    """
     if not isinstance(matrix, list):
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     for i in range(len(matrix)):
