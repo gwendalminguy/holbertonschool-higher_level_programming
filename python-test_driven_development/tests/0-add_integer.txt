@@ -28,7 +28,7 @@ Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
->>> print(add_integer(8, 2, 8))
+>>> print(add_integer(8, None))
 Traceback (most recent call last):
 ...
-TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+TypeError: b must be an integer
