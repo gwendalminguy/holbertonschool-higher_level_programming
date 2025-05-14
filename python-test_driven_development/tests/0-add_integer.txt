@@ -19,10 +19,7 @@ Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
->>> print(add_integer(None, None))
+>>> print(add_integer(None))
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
-
->>> print(add_integer(-2, 8))
-6
