@@ -8,6 +8,9 @@
 >>> print(add_integer(2, 8.2))
 10
 
+>>> print(add_integer(-5, 5))
+0
+
 >>> print(add_integer('c', 8))
 Traceback (most recent call last):
 ...
