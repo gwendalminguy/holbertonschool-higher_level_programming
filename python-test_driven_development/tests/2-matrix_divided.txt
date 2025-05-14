@@ -3,6 +3,9 @@
 >>> print(matrix_divided([[2, 4], [6, 8]], 2))
 [[1.0, 2.0], [3.0, 4.0]]
 
+>>> print(matrix_divided([[2, 4], [6, 8]], -2))
+[[-1.0, -2.0], [-3.0, -4.0]]
+
 >>> print(matrix_divided([[2, 4], [6, 8]], 0))
 Traceback (most recent call last):
 ...
