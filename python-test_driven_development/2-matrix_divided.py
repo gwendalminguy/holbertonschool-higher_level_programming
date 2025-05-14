@@ -1,4 +1,12 @@
 #!/usr/bin/python3
+
+"""
+2-matrix_divided.py
+Module containing a function dividing a matrix by an integer.
+Returns a new matrix.
+"""
+
+
 def matrix_divided(matrix, div):
     """
     Divides each integer from a matrix by another integer.
