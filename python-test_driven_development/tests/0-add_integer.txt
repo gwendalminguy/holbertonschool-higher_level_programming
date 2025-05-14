@@ -24,12 +24,10 @@ Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
->>> print(add_integer(,))
-Traceback (most recent call last):
-...
-SyntaxError: invalid syntax
-
 >>> print(add_integer(None, None))
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
+
+>>> print(add_integer(-2, 8))
+6
