@@ -3,6 +3,7 @@
 """
 0-add_integer.py
 Module containing a function adding two integers.
+Returns an integer.
 """
 
 def add_integer(a, b=98):
