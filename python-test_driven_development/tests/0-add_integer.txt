@@ -1,34 +1,110 @@
 >>> add_integer = __import__('0-add_integer').add_integer
 
->>> print(add_integer(2, 8))
-10
+Positive Integers
+-----------------
 
->>> print(add_integer(2.2, 8))
-10
+.. code-block:: python
 
->>> print(add_integer(-5, -5))
--10
+	>>> print(add_integer(2, 8))
+	10
 
->>> print(add_integer('A', 8))
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
+	>>> print(add_integer(1111111111111111111111111, 1111111111111111111111111))
+        2222222222222222222222222
 
->>> print(add_integer("Hello", "World"))
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
+Positive Floats
+---------------
 
->>> print(add_integer(None))
-Traceback (most recent call last):
-...
-TypeError: a must be an integer
+.. code-block:: python
 
->>> print(add_integer(1.5, 1.5))
-2
+	>>> print(add_integer(2.2, 8))
+	10
 
->>> print(add_integer(2, -8))
--6
+	>>> print(add_integer(2, 8.2))
+	10
 
->>> print(add_integer(0, 0))
-0
+Negative Integers
+-----------------
+
+.. code-block:: python
+
+	>>> print(add_integer(-5, 5))
+	0
+
+	>>> print(add_integer(5, -5))
+	0
+
+	>>> print(add_integer(-5, -5))
+	-10
+
+Negative Floats
+---------------
+
+.. code-block:: python
+
+	>>> print(add_integer(-5.2, 5))
+	0
+
+        >>> print(add_integer(5, -5.2))
+        0
+
+Characters
+----------
+
+.. code-block:: python
+
+	>>> print(add_integer('A', 8))
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+        >>> print(add_integer(8, 'A'))
+        Traceback (most recent call last):
+        ...
+        TypeError: b must be an integer
+
+Strings
+-------
+
+.. code-block:: python
+
+	>>> print(add_integer("Hello", "World"))
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+None
+----
+
+.. code-block:: python
+
+	>>> print(add_integer(None, 2))
+	Traceback (most recent call last):
+	...
+	TypeError: a must be an integer
+
+        >>> print(add_integer(2, None))
+        Traceback (most recent call last):
+        ...
+        TypeError: b must be an integer
+
+Wrong Arguments Number
+----------------------
+
+.. code-block:: python
+
+	>>> print(add_integer())
+	TypeError: add_integer() missing 1 required positional argument: 'a'
+
+	>>> print(add_integer(1, 1, 1))
+	TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+True and False
+--------------
+
+.. code-block:: python
+
+        >>> print(add_integer(False, 1))
+	1
+
+	>>> print(add_integer(1, True))
+	2
