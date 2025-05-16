@@ -20,6 +20,7 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_no_argument(self):
         self.assertEqual(max_integer(), None)
+        self.assertEqual(max_integer([]), None)
 
     def test_too_many(self):
         with self.assertRaises(TypeError):
