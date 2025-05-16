@@ -20,3 +20,9 @@ class TestMaxInteger(unittest.TestCase):
     def test_too_many(self):
         with self.assertRaises(TypeError):
             max_integer([1, 2], [1, 2])
+
+    def test_string(self):
+        self.assertEqual(max_integer("Hello"), 'o')
+
+    def test_characters(self):
+        self.assertEqual(max_integer(['H', 'e', 'l', 'l', 'o']), 'o')
