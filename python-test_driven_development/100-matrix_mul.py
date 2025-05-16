@@ -1,5 +1,20 @@
 #!/usr/bin/python3
+
+"""
+Module containing...
+"""
+
+
 def matrix_mul(m_a, m_b):
+    """
+    Multiplies two matrices.
+
+    Parameters:
+    m_a (list of lists): first matrix
+    m_b (list of lists): second matrix
+
+    Return: new matrix as product of m_a by m_b
+    """
     if not isinstance(m_a, list):
         raise TypeError("m_a must be a list")
     if not isinstance(m_b, list):
