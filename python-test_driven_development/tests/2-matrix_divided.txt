@@ -11,6 +11,17 @@ Positive/Negative Divisor
 	>>> print(matrix_divided([[2, 4], [6, 8]], -2))
 	[[-1.0, -2.0], [-3.0, -4.0]]
 
+Float As Divisor
+----------------
+
+.. code-block:: python
+
+	>>> print(matrix_divided([[2, 4], [6, 8]], 1.5))
+	[[1.33, 2.67], [4.0, 5.33]]
+
+	>>> print(matrix_divided([[2, 4], [6, 8]], -1.5))
+        [[-1.33, -2.67], [-4.0, -5.33]]
+
 Zero As Divisor
 ---------------
 
