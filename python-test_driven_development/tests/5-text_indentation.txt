@@ -78,12 +78,18 @@ FuckTheChecker
 
 .. code-block:: python
 
-	>>> text_indentation("Fuck. The. Checker.")
-	Fuck.
+	>>> text_indentation(":Fuck: :The: :Checker:")
+	:
 	<BLANKLINE>
-	The.
+	Fuck:
 	<BLANKLINE>
-	Checker.
+	:
+	<BLANKLINE>
+	The:
+	<BLANKLINE>
+	:
+	<BLANKLINE>
+	Checker:
 	<BLANKLINE>
 
 None
