@@ -42,6 +42,9 @@ List Of Integers As Matrix
         ...
 	TypeError: object of type 'int' has no len()
 
+	>>> print(matrix_divided([[1, 2]], 1))
+	[[1.0, 2.0]]
+
 Use Of Character
 ----------------
 
