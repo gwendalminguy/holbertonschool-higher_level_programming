@@ -20,6 +20,11 @@ Regular Text
 	World?
 	<BLANKLINE>
 
+	>>> text_indentation("12:00")
+	12:
+	<BLANKLINE>
+	00
+
 Integer As Text
 ---------------
 
