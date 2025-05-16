@@ -25,6 +25,14 @@ Regular Text
 	<BLANKLINE>
 	00
 
+	>>> text_indentation("...")
+	.
+	<BLANKLINE>
+	.
+	<BLANKLINE>
+	.
+	<BLANKLINE>
+
 Integer As Text
 ---------------
 
