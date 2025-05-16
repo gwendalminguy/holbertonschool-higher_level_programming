@@ -38,6 +38,14 @@ Punctuation
 	.
 	<BLANKLINE>
 
+	>>> text_indentation(". : ? ")
+	.
+        <BLANKLINE>
+        :
+        <BLANKLINE>
+        ?
+        <BLANKLINE>
+
 Empty String
 ------------
 
