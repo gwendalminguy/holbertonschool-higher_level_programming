@@ -84,6 +84,16 @@ List As Text
         ...
         TypeError: text must be a string
 
+Float Hiding
+------------
+
+.. code-block:: python
+
+	>>> text_indentation("1.5")
+	1.
+	<BLANKLINE>
+	5
+
 FuckTheChecker
 --------------
 
