@@ -14,6 +14,13 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([1.5, 2.5, 3.5]), 3.5)
         self.assertEqual(max_integer([-1.5, -2.5, -3.5]), -1.5)
 
+    def test_tuple(self):
+        self.assertEqual(max_integer((1, 2, 3)), 3)
+
+    def test_set(self):
+        with self.assertRaises(TypeError):
+            max_integer({1, 2, 3})
+
     def test_none(self):
         with self.assertRaises(TypeError):
             max_integer(None)
