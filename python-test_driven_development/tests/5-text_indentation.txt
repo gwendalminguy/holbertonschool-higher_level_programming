@@ -25,6 +25,9 @@ Regular Text
 	<BLANKLINE>
 	00
 
+	>>> text_indentation("""    test    """)
+	    test    
+
 Regular Docstring
 -----------------
 
