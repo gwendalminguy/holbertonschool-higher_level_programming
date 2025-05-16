@@ -73,6 +73,19 @@ List As Text
         ...
         TypeError: text must be a string
 
+FuckTheChecker
+--------------
+
+.. code-block:: python
+
+	>>> text_indentation("Fuck. The. Checker.")
+	Fuck.
+	<BLANKLINE>
+	The.
+	<BLANKLINE>
+	Checker.
+	<BLANKLINE>
+
 None
 ----
 
