@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 """
-Module containing...
+Module containing a function multiplying two matrices.
 """
 
 
