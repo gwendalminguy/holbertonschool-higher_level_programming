@@ -42,3 +42,43 @@ Strings
         Traceback (most recent call last):
         ...
         TypeError: m_b must be a list of lists
+
+Empty Matrix
+------------
+
+.. code-block:: python
+
+        >>> matrix_mul([], [[1, 2], [3, 4]])
+        Traceback (most recent call last):
+        ...
+        ValueError: m_a can't be empty
+
+        >>> matrix_mul([[]], [[1, 2], [3, 4]])
+        Traceback (most recent call last):
+        ...
+        ValueError: m_a can't be empty
+
+        >>> matrix_mul([[1, 2], [3, 4]], [])
+        Traceback (most recent call last):
+        ...
+        ValueError: m_b can't be empty
+
+        >>> matrix_mul([[1, 2], [3, 4]], [[]])
+        Traceback (most recent call last):
+        ...
+        ValueError: m_b can't be empty
+
+Characters
+----------
+
+.. code-block:: python
+
+        >>> matrix_mul([[1, 2], ['A', 'B']], [[1, 2], [3, 4]])
+        Traceback (most recent call last):
+        ...
+        TypeError: m_a should contain only integers or floats
+
+	>>> matrix_mul([[1, 2], [3, 4]], [[1, 2], ['A', 'B']])
+        Traceback (most recent call last):
+        ...
+        TypeError: m_b should contain only integers or floats
