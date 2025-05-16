@@ -38,6 +38,10 @@ class TestMaxInteger(unittest.TestCase):
         with self.assertRaises(TypeError):
             max_integer({1, 2, 3})
 
+    def test_dictionary(self):
+        with self.assertRaises(KeyError):
+            max_integer({"one": 1, "two": 2, "three": 3})
+
     def test_none(self):
         with self.assertRaises(TypeError):
             max_integer(None)
