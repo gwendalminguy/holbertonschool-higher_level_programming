@@ -25,6 +25,12 @@ Regular Text
 	<BLANKLINE>
 	00
 
+Regular Docstring
+-----------------
+
+	>>> text_indentation("""Hello World!""")
+	Hello World!
+
 Punctuation
 -----------
 
@@ -45,15 +51,6 @@ Punctuation
         <BLANKLINE>
         ?
         <BLANKLINE>
-
-	>>> text_indentation(".  :  ?  ")
-	.
-        <BLANKLINE>
-         :
-        <BLANKLINE>
-         ?
-        <BLANKLINE>
-	<BLANKLINE>
 
 Empty String
 ------------
