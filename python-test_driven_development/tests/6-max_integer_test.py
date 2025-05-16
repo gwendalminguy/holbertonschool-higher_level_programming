@@ -15,6 +15,18 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([1.5, 2.5, 3.5]), 3.5)
         self.assertEqual(max_integer([-1.5, -2.5, -3.5]), -1.5)
 
+    def test_mix(self):
+        self.assertEqual(max_integer([1.5, -2, 3.5]), 3.5)
+        self.assertEqual(max_integer([-1.5, 2.5, -3.5]), 2.5)
+
+    def test_same_multiple(self):
+        self.assertEqual(max_integer([5, 5, 10, 5, 5]), 10)
+        self.assertEqual(max_integer([5, 5, -10, 5, 5]), 5)
+
+    def test_infinity(self):
+        self.assertEqual(max_integer([1, float('inf')]), float('inf'))
+        self.assertEqual(max_integer([1, float('-inf')]), 1)
+
     def test_tuple(self):
         self.assertEqual(max_integer((1, 2, 3)), 3)
 
