@@ -17,3 +17,28 @@ Square Matrices - Different Size
 	Traceback (most recent call last):
         ...
         ValueError: m_a and m_b can't be multiplied
+
+Strings
+-------
+
+.. code-block:: python
+
+	>>> matrix_mul("Hello", [[1, 2], [3, 4]])
+	Traceback (most recent call last):
+        ...
+	TypeError: m_a must be a list
+
+	>>> matrix_mul([[1, 2], [3, 4]], "World")
+        Traceback (most recent call last):
+        ...
+        TypeError: m_b must be a list
+
+	>>> matrix_mul(["Hello"], [[1, 2], [3, 4]])
+        Traceback (most recent call last):
+        ...
+        TypeError: m_a must be a list of lists
+
+        >>> matrix_mul([[1, 2], [3, 4]], ["World"])
+        Traceback (most recent call last):
+        ...
+        TypeError: m_b must be a list of lists
