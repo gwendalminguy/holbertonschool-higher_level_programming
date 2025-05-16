@@ -73,6 +73,11 @@ List As Text
         ...
         TypeError: text must be a string
 
+	>>> text_indentation(['H', 'e', 'l', 'l', 'o'])
+        Traceback (most recent call last):
+        ...
+        TypeError: text must be a string
+
 FuckTheChecker
 --------------
 
