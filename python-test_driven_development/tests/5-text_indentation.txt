@@ -94,6 +94,22 @@ Float Hiding
 	<BLANKLINE>
 	5
 
+Random Long Text
+----------------
+
+.. code-block:: python
+
+	>>> text_indentation("lfsdlfjslcbrzlsnfjlsn qdjnclqdnqmkclqnclzks klqdjncldqjncdnc")
+	lfsdlfjslcbrzlsnfjlsn qdjnclqdnqmkclqnclzks klqdjncldqjncdnc
+
+	>>> text_indentation("lfsdlfjslcbrzlsnfjlsn. qdjnclqdnqmkclqnclzks: klqdjncldqjncdnc?")
+	lfsdlfjslcbrzlsnfjlsn.
+	<BLANKLINE>
+	qdjnclqdnqmkclqnclzks:
+	<BLANKLINE>
+	klqdjncldqjncdnc?
+	<BLANKLINE>
+
 FuckTheChecker
 --------------
 
