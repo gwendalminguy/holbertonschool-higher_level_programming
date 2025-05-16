@@ -22,6 +22,9 @@ Float As Matrix
 	>>> print(matrix_divided([[2.222, 4.222], [6.222, 8.222]], 2))
 	[[1.11, 2.11], [3.11, 4.11]]
 
+	>>> print(matrix_divided([[2.2, 4], [6.2, 8]], 2))
+	[[1.1, 2], [3.1, 4]]
+
 Float As Divisor
 ----------------
 
