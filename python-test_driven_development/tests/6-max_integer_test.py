@@ -31,6 +31,9 @@ class TestMaxInteger(unittest.TestCase):
         self.assertEqual(max_integer([1, float('inf')]), float('inf'))
         self.assertEqual(max_integer([1, float('-inf')]), 1)
 
+    def test_list(self):
+        self.assertEqual(max_integer([[1, 2, 3]]), [1, 2, 3])
+
     def test_tuple(self):
         self.assertEqual(max_integer((1, 2, 3)), 3)
 
