@@ -5,6 +5,9 @@ Regular Text
 
 .. code-block:: python
 
+	>>> text_indentation("Hello World!")
+	Hello World!
+
         >>> text_indentation("Hello. World.")
 	Hello.
 	<BLANKLINE>
@@ -24,6 +27,16 @@ Integer As Text
 
 	>>> text_indentation(5)
 	Traceback (most recent call last):
+        ...
+        TypeError: text must be a string
+
+List As Text
+------------
+
+.. code-block:: python
+
+        >>> text_indentation(["Hello"])
+        Traceback (most recent call last):
         ...
         TypeError: text must be a string
 
