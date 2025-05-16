@@ -25,6 +25,11 @@ Regular Text
 	<BLANKLINE>
 	00
 
+Punctuation
+-----------
+
+.. code-block:: python
+
 	>>> text_indentation("...")
 	.
 	<BLANKLINE>
@@ -32,6 +37,13 @@ Regular Text
 	<BLANKLINE>
 	.
 	<BLANKLINE>
+
+Empty String
+------------
+
+.. code-block:: python
+
+	>>> text_indentation("")
 
 Integer As Text
 ---------------
