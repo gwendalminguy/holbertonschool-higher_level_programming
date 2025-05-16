@@ -1,0 +1,19 @@
+>>> matrix_mul = __import__('100-matrix_mul').matrix_mul
+
+Square Matrices - Same Size
+---------------------------
+
+.. code-block:: python
+
+        >>> matrix_mul([[1, 2], [3, 4]], [[1, 2], [3, 4]])
+        [[7, 10], [15, 22]]
+
+Square Matrices - Different Size
+--------------------------------
+
+.. code-block:: python
+
+	>>> matrix_mul([[1, 2], [3, 4]], [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+	Traceback (most recent call last):
+        ...
+        ValueError: m_a and m_b can't be multiplied
