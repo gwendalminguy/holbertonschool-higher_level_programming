@@ -71,6 +71,11 @@ Use Of Character
 	...
 	TypeError: matrix must be a matrix (list of lists) of integers/floats
 
+	>>> print(matrix_divided([[2, 4], ['A', 8]], 'A'))
+	Traceback (most recent call last):
+        ...
+        TypeError: matrix must be a matrix (list of lists) of integers/floats
+
 String As Matrix
 ----------------
 
