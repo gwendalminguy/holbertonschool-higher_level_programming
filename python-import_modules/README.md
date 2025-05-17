@@ -13,3 +13,5 @@ This project is about learning to import modules in Python
 * [5-variable_load.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-import_modules/5-variable_load.py), a script importing a variable from a file.
 
 * [100-my_calculator.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-import_modules/100-my_calculator.py), a script computing the result of basic operations.
+
+* [103-fast_alphabet.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-import_modules/103-fast_alphabet.py), a script printing the alphabet in uppercase.
