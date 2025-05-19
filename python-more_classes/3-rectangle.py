@@ -24,11 +24,13 @@ class Rectangle:
 
     def __str__(self):
         result = ""
-        for row in range(self.__height):
-            for col in range(self.__width):
-                result += '#'
-            if row + 1 != self.__height:
-                result += '\n'
+        if self.__height != 0 and self.__width != 0:
+            for row in range(self.__height):
+                for col in range(self.__width):
+                    result += '#'
+                if row + 1 != self.__height:
+                    result += '\n'
+
         return result
 
     @property
