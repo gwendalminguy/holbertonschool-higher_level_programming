@@ -1,4 +1,4 @@
-## PYTHON-MORE CLASSES
+## Python - More Classes
 
 This project is about learning to use more classes and objects.
 
