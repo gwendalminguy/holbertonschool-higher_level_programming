@@ -38,6 +38,9 @@ class Square:
             self.__position = position
 
     def __str__(self):
+        """
+        String representation of the square.
+        """
         result = ""
         if self.__size > 0:
             for row in range(self.__position[1]):
