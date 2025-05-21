@@ -60,6 +60,7 @@ class Node:
         else:
             self.__next_node = value
 
+
 class SinglyLinkedList:
     """
     A class to define a singly linked list.
@@ -74,7 +75,7 @@ class SinglyLinkedList:
         """
         Prints each node of the list.
         """
-        collection = "" 
+        collection = ""
         current = self.__head
         while current is not None:
             collection += str(current.data)
@@ -88,7 +89,7 @@ class SinglyLinkedList:
         Inserts a new node in the correct position.
         """
         new = Node(value)
-        if self.__head == None:
+        if self.__head is None:
             self.__head = new
         elif self.__head.data > value:
             new.next_node = self.__head
