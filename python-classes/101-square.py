@@ -50,7 +50,8 @@ class Square:
                     result += " "
                 for j in range(self.__size):
                     result += "#"
-                result += "\n"
+                if i + 1 != self.__size:
+                    result += "\n"
         return result
 
     @property
