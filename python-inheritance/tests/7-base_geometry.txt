@@ -22,14 +22,69 @@ integer_validator - Wrong Arguments Number
 	...
 	TypeError: integer_validator() missing 1 required positional argument: 'value'
 
-integer_validator - String As Name
-----------------------------------
+integer_validator - String As Value
+-----------------------------------
 
 .. code-block:: python
 
 	>>> bg = BaseGeometry()
 	>>> bg.integer_validator("hello", "world")
 	Traceback (most recent call last):
+        ...
+        TypeError: hello must be an integer
+
+integer_validator - Tuple As Value
+----------------------------------
+
+.. code-block:: python
+
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("hello", (5, 5))
+        Traceback (most recent call last):
+        ...
+        TypeError: hello must be an integer
+
+integer_validator - List As Value
+---------------------------------
+
+.. code-block:: python
+
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("hello", [5, 5])
+        Traceback (most recent call last):
+        ...
+        TypeError: hello must be an integer
+
+integer_validator - Boolean As Value
+------------------------------------
+
+.. code-block:: python
+
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("hello", True)
+        Traceback (most recent call last):
+        ...
+        TypeError: hello must be an integer
+
+integer_validator - Set As Value
+--------------------------------
+
+.. code-block:: python
+
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("hello", {5, 5})
+        Traceback (most recent call last):
+        ...
+        TypeError: hello must be an integer
+
+integer_validator - None As Value
+---------------------------------
+
+.. code-block:: python
+
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("hello", None)
+        Traceback (most recent call last):
         ...
         TypeError: hello must be an integer
 
