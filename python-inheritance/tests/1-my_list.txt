@@ -15,6 +15,9 @@ Unordered Integer List
 	>>> print_sorted(my_list)
 	[2, 3, 5, 7, 9]
 
+	>>> print(my_list)
+	[7, 2, 3, 5, 9]
+
 Unordered String List
 ---------------------
 
