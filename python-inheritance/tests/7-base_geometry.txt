@@ -1,0 +1,31 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> area = BaseGeometry.area
+>>> integer_validator = BaseGeometry.integer_validator
+
+String As Name
+--------------
+
+.. code-block:: python
+
+	>>> bg = BaseGeometry()
+	>>> bg.integer_validator("hello", "world")
+	Traceback (most recent call last):
+        ...
+        TypeError: hello must be an integer
+
+Negative / 0 As Value
+---------------------
+
+.. code-block:: python
+
+        >>> bg = BaseGeometry()
+        >>> bg.integer_validator("number", -10)
+        Traceback (most recent call last):
+        ...
+        ValueError: number must be greater than 0
+
+	>>> bg = BaseGeometry()
+        >>> bg.integer_validator("number", 0)
+        Traceback (most recent call last):
+        ...
+        ValueError: number must be greater than 0
