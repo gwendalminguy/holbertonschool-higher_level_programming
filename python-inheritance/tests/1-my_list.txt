@@ -1,8 +1,8 @@
 >>> MyList = __import__('1-my_list').MyList
 >>> print_sorted = MyList.print_sorted
 
-Ordered List
-------------
+Unordered Integer List
+----------------------
 
 .. code-block:: python
 
@@ -14,3 +14,23 @@ Ordered List
         >>> my_list.append(9)
 	>>> print_sorted(my_list)
 	[2, 3, 5, 7, 9]
+
+Unordered String List
+---------------------
+
+.. code-block:: python
+
+	>>> my_list = MyList()
+        >>> my_list.append("World")
+        >>> my_list.append("Hello")
+	>>> print_sorted(my_list)
+	['Hello', 'World']
+
+Empty List
+----------
+
+.. code-block:: python
+
+        >>> my_list = MyList()
+	>>> print_sorted(my_list)
+	[]
