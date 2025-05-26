@@ -1,6 +1,4 @@
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
->>> area = BaseGeometry.area
->>> integer_validator = BaseGeometry.integer_validator
 
 area
 ----
