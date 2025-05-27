@@ -11,7 +11,6 @@ class CountedIterator:
     def __init__(self, data):
         self.iterator = iter(data)
         self.counter = 0
-        self.length = len(data)
 
     def __next__(self):
         self.counter += 1
