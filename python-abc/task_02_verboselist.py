@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Module containing...
+Module containing class VerboseList.
 """
 
 
 class VerboseList(list):
     """
-    A class...
+    A class defining extended list methods with notifications.
     """
     def append(self, item):
         super().append(item)

@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module containing class animal and subclasses dog and cat.
+Module containing class Animal and subclasses Dog and Cat.
 """
 
 from abc import ABC, abstractmethod

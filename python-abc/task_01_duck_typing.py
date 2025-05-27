@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module containing class shape and subclasses circle and rectangle.
+Module containing class Shape and subclasses Circle and Rectangle.
 """
 
 from abc import ABC, abstractmethod
