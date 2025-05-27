@@ -15,11 +15,12 @@ class CountedIterator:
 
     def __next__(self):
         self.counter += 1
-        if self.length >= self.counter:
+        try:
             item = next(self.iterator)
-            return item
+        except StopIteration:
+            raise
         else:
-            raise StopIteration
+            return item
 
     def get_count(self):
         return self.counter
