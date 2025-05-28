@@ -25,7 +25,7 @@ class Circle(Shape):
     A class to define a circle.
     """
     def __init__(self, radius):
-        self.__radius = radius
+        self.__radius = abs(radius)
 
     def area(self):
         return pi * self.__radius * self.__radius
