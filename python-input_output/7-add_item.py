@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-import json
-import sys
-save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 """
 7-add_item.py
 Module containing function to add all arguments to a list saved in as a file.
 """
+import json
+import sys
+save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 
 def main():
