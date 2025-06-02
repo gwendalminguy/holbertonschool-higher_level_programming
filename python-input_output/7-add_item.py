@@ -13,7 +13,7 @@ def main():
     """
     Function creating adding all arguments to a list saved in as a file.
     """
-    if len(sys.argv) == 1:
+    if len(sys.argv) < 2:
         sys.exit()
 
     filename = "add_item.json"
