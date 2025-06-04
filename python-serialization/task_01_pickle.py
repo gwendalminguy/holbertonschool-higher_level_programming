@@ -29,3 +29,4 @@ class CustomObject:
             obj = pickle.load(f)
 
         return obj
+    
