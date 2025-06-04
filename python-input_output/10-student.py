@@ -23,10 +23,7 @@ class Student:
                 return self.__dict__
 
         dictionary = {}
-        if "first_name" in attrs:
-            dictionary["first_name"] = self.first_name
-        if "last_name" in attrs:
-            dictionary["last_name"] = self.last_name
-        if "age" in attrs:
-            dictionary["age"] = self.age
+        for element in attrs:
+            if element in self.__dict__:
+                dictionary[element] = self.__dict__[element]
         return dictionary
