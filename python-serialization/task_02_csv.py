@@ -14,8 +14,8 @@ def convert_csv_to_json(filename):
     export = "data.json"
     try:
     	with open(filename, newline='') as f:
-        	DR = csv.DictReader(f)
-        	for line in DR:
+            DR = csv.DictReader(f)
+            for line in DR:
                 new_list.append(line)
     except FileNotFoundError:
         return False
