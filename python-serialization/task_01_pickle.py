@@ -28,4 +28,4 @@ class CustomObject:
         with open(filename, 'rb') as f:
             obj = pickle.load(f)
 
-        return obj
+        return cls(name=obj.name, age=obj.age, is_student=obj.is_student)
