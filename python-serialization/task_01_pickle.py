@@ -9,7 +9,7 @@ class CustomObject:
     """
     Class defining a custom object.
     """
-    def __init__(self, name, age, is_student):
+    def __init__(self, name=None, age=None, is_student=None):
         self.name = name
         self.age = age
         self.is_student = is_student
