@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module containing function...
+Module containing function converting CSV file to JSON file.
 """
 import csv
 import json
@@ -8,7 +8,7 @@ import json
 
 def convert_csv_to_json(filename):
     """
-    ...
+    Converts data from a CSV file to a JSON file.
     """
     new_list = []
     export = "data.json"
@@ -16,7 +16,7 @@ def convert_csv_to_json(filename):
     	with open(filename, newline='') as f:
         	DR = csv.DictReader(f)
         	for line in DR:
-            	new_list.append(line)
+                new_list.append(line)
     except FileNotFoundError:
         return False
 
