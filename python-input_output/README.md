@@ -25,3 +25,7 @@ This project is about learning to open, read and write files, and to use the JSO
 * [10-student.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-input_output/10-student.py)
 
 * [11-student.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-input_output/11-student.py)
+
+* [12-pascal_triangle.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-input_output/12-pascal-triangle.py)
+
+* [100-append_after.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-input_output/100-append_after.py)
