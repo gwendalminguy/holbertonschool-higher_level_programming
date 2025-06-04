@@ -14,7 +14,7 @@ def pascal_triangle(n):
         for row in range(n):
             numbers = [1]
             for i in range(1, row):
-                sum = triangle[row -1][i - 1] + triangle[row -1][i]
+                sum = triangle[row - 1][i - 1] + triangle[row - 1][i]
                 numbers.append(sum)
             if row > 0:
                 numbers.append(1)
