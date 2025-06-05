@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module containing class CustomObject
+Module containing class CustomObject.
 """
 import pickle
 
@@ -15,9 +15,10 @@ class CustomObject:
         self.is_student = is_student
 
     def display(self):
-        print("Name: {}".format(self.name))
-        print("Age: {}".format(self.age))
-        print("Is Student: {}".format(self.is_student))
+        print("Name: {}".format(self.name), \
+        "Age: {}".format(self.age), \
+        "Is Student: {}".format(self.is_student), \
+        sep="\n")
 
     def serialize(self, filename):
         with open(filename, 'wb') as f:
