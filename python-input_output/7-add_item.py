@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 7-add_item.py
-Module containing function to add all arguments to a list saved in as a file.
+Script adding all arguments to a list saved as a file.
 """
 import json
 import sys
@@ -11,7 +11,7 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 def main():
     """
-    Function creating adding all arguments to a list saved in as a file.
+    Function adding all arguments to a list saved in as a file.
     """
     if len(sys.argv) < 2:
         sys.exit()
