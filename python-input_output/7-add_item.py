@@ -11,7 +11,7 @@ load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
 
 def main():
     """
-    Function adding all arguments to a list saved in as a file.
+    Adds all command-line arguments to a list saved as a file.
     """
     if len(sys.argv) < 2:
         sys.exit()
