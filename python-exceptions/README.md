@@ -2,8 +2,7 @@
 
 This project is about learning to handle exceptions and errors in python.
 
-* [0-safe_print_list.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-exceptions/0-safe_print_list.py), a function print a
-ny given number of elements of a list.
+* [0-safe_print_list.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-exceptions/0-safe_print_list.py), a function print any given number of elements of a list.
 
 * [1-safe_print_integer.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-exceptions/1-safe_print_integer.py), a function printing an integer.
 
