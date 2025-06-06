@@ -2,7 +2,7 @@
 
 This project is about learning to use inheritance.
 
-* [tests/](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-inheritance/tests), ...
+* [tests/](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-inheritance/tests), the directory containing all test files.
 
 * [0-lookup.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-inheritance/0-lookup.py), a module containing a function to get available attributes and methods of an object.
 
