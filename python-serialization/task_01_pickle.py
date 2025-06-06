@@ -31,5 +31,7 @@ class CustomObject:
                 obj = pickle.load(f)
         except FileNotFoundError:
             return None
+        except EOFError:
+            return None
         else:
             return cls(**obj)
