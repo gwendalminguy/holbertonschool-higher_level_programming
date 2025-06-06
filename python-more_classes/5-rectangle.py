@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-0-rectangle.py
+5-rectangle.py
 Module containing class Rectangle.
 """
 
