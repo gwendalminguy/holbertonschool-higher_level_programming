@@ -6,16 +6,16 @@ This document is a brief introduction to the HyperText Transfer Protocol.
 
 HTTP is a protocol used to transfer data over a network. It includes websites' content and all API calls made between the client and the server. HTTPS is the basically the same as HTTP, but in a secure way, using the [TLS/SSL](https://en.wikipedia.org/wiki/Transport_Layer_Security) protocol. This protocol ensures that the server is authenticated, and all data exchanges are encrypted.
 
-### HTTP Request/Response Structure
+### HTTP Request & Response Structure
 
 #### Request:
 
-Request messages are sent by a client to a target server, and are structured of different parts in a specific order.
+Request messages are sent by a client to a target server, and are structured of different parts in a specific order:
 
-1. request line: composed of the request method, the requested URI and the protocol version, separated by spaces
-2. zero or more request header fields: each composed of the field name, a colon, an optional whitespace, the field value, and an optional trailing whitespace
-3. empty line
-4. optional message body
+1. A request line, composed of the request method, the requested URI and the protocol version, separated by spaces.
+2. Zero or more request header fields, each composed of the field name, a colon, an optional whitespace, the field value, and an optional trailing whitespace.
+3. An empty line.
+4. An optional message body.
 
 ```
 GET /hello.txt HTTP/1.1
@@ -25,12 +25,12 @@ Accept-Language: en
 
 #### Response:
 
-Response messages are sent by a server to a client as a reply to its former request message, and are structured of different parts in a specific order.
+Response messages are sent by a server to a client as a reply to its former request message, and are structured of different parts in a specific order:
 
-1. status line: composed of the protocol version, the status code, and an optional reason phrase, separated by spaces
-2. zero or more response header fields: each composed of the field name, a colon, an optional whitespace, the field value, and an optional trailing whitespace
-3. empty line
-4. optional message body
+1. A status line, composed of the protocol version, the status code, and an optional reason phrase, separated by spaces.
+2. Zero or more response header fields, each composed of the field name, a colon, an optional whitespace, the field value, and an optional trailing whitespace
+3. An empty line.
+4. An optional message body.
 
 ```
 HTTP/1.1 200 OK
@@ -45,7 +45,7 @@ Hello World!
 
 #### Methods:
 
-Every HTTP request uses a [method](https://en.wikipedia.org/wiki/HTTP#Request_methods) to indicate the desired action to be performed on the identified ressource. They are case-sensitive.
+Every HTTP request uses a [method](https://en.wikipedia.org/wiki/HTTP#Request_methods) to indicate the desired action to be performed on the identified ressource. They are case-sensitive. Most common methods are the following:
 
 - GET: requests that the target resource transfer a representation of its state
 - HEAD: requests that the target resource transfer a representation of its state, without the reprensentation data enclosed in the response body
@@ -55,12 +55,12 @@ Every HTTP request uses a [method](https://en.wikipedia.org/wiki/HTTP#Request_me
 
 #### Status Codes:
 
-Every HTTP response contains a [status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes), each having a different meaning. They are composed of three digits, and can be grouped according to the first digit.
+Every HTTP response contains a [status code](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes), each having a different meaning. They are composed of three digits, and can be grouped according to the first digit. Most common status codes are the following:
 
 - 1XX Informational
 
-	- 100 Continue: ...
-	- 101 Switching Protocols : ...
+	- 100 Continue: the server has received the request headers and the client should proceed to send the request body
+	- 101 Switching Protocols : the client has requested to switch protocols and the server has accepted
 
 - 2XX Successful
 
@@ -76,11 +76,11 @@ Every HTTP response contains a [status code](https://en.wikipedia.org/wiki/List_
 
 - 4XX Client Error
 
-	- 400 Bad Reaquest: the request is invalid
+	- 400 Bad Request: the request is invalid
 	- 401 Unauthorized: the request is valid and understood but the client is unauthenticated
 	- 403 Forbidden: the request is valid and understood but refused by the server
 	- 404 Not Found: the requested ressource could not be found
-	- 408 Reaquest Timeout: the server timed out waiting for the client request
+	- 408 Request Timeout: the server timed out waiting for the client request
 
 - 5XX Server Error
 
