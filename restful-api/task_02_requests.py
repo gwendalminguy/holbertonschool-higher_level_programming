@@ -27,13 +27,12 @@ def fetch_and_save_posts():
     if r.status_code == 200:
         obj = r.json()
         result = []
-        print(obj[0])
         for i in range(len(obj)):
-            result.append(
-                {"id": obj[i]["id"],
-                 "title": obj[i]["title"],
-                 "body": obj[i]["body"].replace("\n", " ")}
-            )
+            result.append({
+                "id": obj[i]["id"],
+                "title": obj[i]["title"],
+                "body": obj[i]["body"].replace("\n", " ")
+            })
 
         with open("posts.csv", "w", newline="") as f:
             fieldnames = ["id", "title", "body"]
