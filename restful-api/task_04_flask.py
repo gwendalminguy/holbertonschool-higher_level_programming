@@ -9,8 +9,6 @@ import json
 
 app = Flask(__name__)
 users = {}
-        #"jane": {"username": "jane", "name": "Jane", "age": 28, "city": "Los Angeles"},
-        #"david": {"username": "david", "name": "David", "age": 22, "city": "New York"}
 
 
 @app.route("/")
@@ -31,7 +29,7 @@ def get_user(username):
         return jsonify(user)
     else:
         error = {"error": "User not found"}
-        return jsonify(error)
+        return jsonify(error), 404
 
 
 @app.route("/add_user", methods=["POST"])
