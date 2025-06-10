@@ -16,13 +16,17 @@ class FirstServer(BaseHTTPRequestHandler):
             self.send_header("Content-type", "text/plain")
             self.end_headers()
             message = "Hello, this is a simple API!"
-        
+
         elif self.path == "/data":
             self.send_response(200)
             self.send_header("Content-type", "application/json")
             self.end_headers()
-            message = json.dumps({"name": "John", "age": 30, "city": "New York"})
-            
+            message = json.dumps({
+                "name": "John",
+                "age": 30,
+                "city": "New York"
+            })
+
         elif self.path == "/status":
             self.send_response(200)
             self.send_header("Content-type", "text/plain")
