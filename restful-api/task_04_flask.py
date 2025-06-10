@@ -8,10 +8,9 @@ from flask import request
 import json
 
 app = Flask(__name__)
-#users = {
+users = {}
         #"jane": {"username": "jane", "name": "Jane", "age": 28, "city": "Los Angeles"},
         #"david": {"username": "david", "name": "David", "age": 22, "city": "New York"}
-    #}
 
 
 @app.route("/")
@@ -49,15 +48,14 @@ def add_user():
             }
             users[user["username"]] = user
             message = "User added"
-
-            return {
+            return jsonify({
                 "message": message,
                 "user": user
-            }, 201
+            }), 201
 
         else:
             message = {"error": "Username is required"}
-            return message, 400
+            return jsonify(message), 400
 
 
 @app.route("/status")
