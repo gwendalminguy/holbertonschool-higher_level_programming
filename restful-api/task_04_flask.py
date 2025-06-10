@@ -5,12 +5,13 @@ Module containing basic Flask API.
 from flask import Flask
 from flask import jsonify
 from flask import request
+import json
 
 app = Flask(__name__)
-#users = {
-        #"jane": {"username": "jane", "name": "Jane", "age": 28, "city": "Los Angeles"},
-        #"david": {"username": "david", "name": "David", "age": 22, "city": "New York"}
-    #}
+users = {
+        "jane": {"username": "jane", "name": "Jane", "age": 28, "city": "Los Angeles"},
+        "david": {"username": "david", "name": "David", "age": 22, "city": "New York"}
+    }
 
 
 @app.route("/")
@@ -34,9 +35,20 @@ def get_user(username):
         return jsonify(error)
 
 
-@app.route("/add_user")
+@app.route("/add_user", methods=["POST"])
 def add_user():
-    pass
+    if request.method == "POST":
+        content = json.loads(request.data)
+
+        user = {
+            "username": content["username"],
+            "name": content["name"],
+            "age": content["age"],
+            "city": content["city"]
+        }
+
+        users[user["username"]] = user
+        return "DONE"
 
 
 @app.route("/status")
