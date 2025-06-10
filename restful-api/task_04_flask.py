@@ -40,15 +40,24 @@ def add_user():
     if request.method == "POST":
         content = json.loads(request.data)
 
-        user = {
-            "username": content["username"],
-            "name": content["name"],
-            "age": content["age"],
-            "city": content["city"]
-        }
+        if "username" in content.keys():
+            user = {
+                "username": content["username"],
+                "name": content["name"],
+                "age": content["age"],
+                "city": content["city"]
+            }
+            users[user["username"]] = user
+            message = "User added"
 
-        users[user["username"]] = user
-        return "DONE"
+            return {
+                "message": message,
+                "user": user
+            }, 201
+
+        else:
+            message = {"error": "Username is required"}
+            return message, 400
 
 
 @app.route("/status")
