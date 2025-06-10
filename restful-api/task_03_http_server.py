@@ -16,28 +16,26 @@ class FirstServer(BaseHTTPRequestHandler):
             self.send_header("Content-type", "text/plain")
             self.end_headers()
             message = "Hello, this is a simple API!"
-            self.wfile.write(bytes(message, "utf8"))
         
         elif self.path == "/data":
             self.send_response(200)
             self.send_header("Content-type", "application/json")
             self.end_headers()
-            data = json.dumps({"name": "John", "age": 30, "city": "New York"})
-            self.wfile.write(bytes(data, "utf8"))
+            message = json.dumps({"name": "John", "age": 30, "city": "New York"})
             
         elif self.path == "/status":
             self.send_response(200)
             self.send_header("Content-type", "text/plain")
             self.end_headers()
             message = "OK"
-            self.wfile.write(bytes(message, "utf8"))
 
         else:
             self.send_response(404, message="Not Found")
             self.send_header("Content-type", "text/plain")
             self.end_headers()
             message = "Endpoint not found"
-            self.wfile.write(bytes(message, "utf8"))
+
+        self.wfile.write(bytes(message, "utf8"))
 
 
 def main():
