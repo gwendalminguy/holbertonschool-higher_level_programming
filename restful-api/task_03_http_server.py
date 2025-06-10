@@ -26,7 +26,11 @@ class FirstServer(BaseHTTPRequestHandler):
             self.wfile.write(bytes(data, "utf8"))
             
         elif self.path == "/status":
-            self.send_response(200, message="OK")
+            self.send_response(200)
+            self.send_header("Content-type", "text/plain")
+            self.end_headers()
+            message = "OK"
+            self.wfile.write(bytes(message, "utf8"))
 
         else:
             self.send_response(404, message="Not Found")
