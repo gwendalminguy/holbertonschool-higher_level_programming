@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!./venv/bin/python3
 """
 Module containing functions fetching and printing or saving posts from JSONPlaceholder.
 """
