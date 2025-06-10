@@ -11,12 +11,14 @@ class FirstServer(BaseHTTPRequestHandler):
     A class to define a simple server.
     """
     def do_GET(self):
-        self.send_response(200)
-        message = "Hello, this is a simple API!"
-        self.send_header("Content-type", "text/plain")
-        self.end_headers()
+        if self.path == "/":
+            self.send_response(200)
+            self.send_header("Content-type", "text/plain")
+            self.end_headers()
+            message = "Hello, this is a simple API!"
+            self.wfile.write(bytes(message, "utf8"))
         
-        if self.path == "/data":
+        elif self.path == "/data":
             self.send_response(200)
             self.send_header("Content-type", "application/json")
             self.end_headers()
@@ -27,7 +29,11 @@ class FirstServer(BaseHTTPRequestHandler):
             self.send_response(200, message="OK")
 
         else:
-            self.send_error(404, message="Not Found", explain="Endpoint not found")  
+            self.send_response(404, message="Not Found")
+            self.send_header("Content-type", "text/plain")
+            self.end_headers()
+            message = "Endpoint not found"
+            self.wfile.write(bytes(message, "utf8"))
 
 
 def main():
