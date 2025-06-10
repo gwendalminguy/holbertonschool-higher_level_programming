@@ -8,10 +8,10 @@ from flask import request
 import json
 
 app = Flask(__name__)
-users = {
-        "jane": {"username": "jane", "name": "Jane", "age": 28, "city": "Los Angeles"},
-        "david": {"username": "david", "name": "David", "age": 22, "city": "New York"}
-    }
+#users = {
+        #"jane": {"username": "jane", "name": "Jane", "age": 28, "city": "Los Angeles"},
+        #"david": {"username": "david", "name": "David", "age": 22, "city": "New York"}
+    #}
 
 
 @app.route("/")
