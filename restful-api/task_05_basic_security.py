@@ -44,6 +44,12 @@ def basic_protected():
     return jsonify({"Basic Auth": "Access Granted"})
 
 
+@auth.verify_password
+def verify_password(username, password):
+    if username in users.keys() and check_password_hash(users[username]["password"], password):
+        return username
+
+
 @app.route("/login", methods=["POST"])
 def login():
     if request.method == "POST":
