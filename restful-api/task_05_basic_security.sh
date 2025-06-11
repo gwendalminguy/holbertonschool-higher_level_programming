@@ -14,13 +14,16 @@ RESPONSE=$(curl -s -X POST -H "Content-Type: application/json" -d '{"username":"
 export JWT="$(echo "$RESPONSE" | jq -r '.access_token')"
 echo "Access Token: $JWT"
 
-echo -e "\n> Access Basic Protected:"
-curl http://localhost:5000/basic-protected
+echo -e "\n> Access Basic Protected Invalid Password (Error Expected):"
+curl --user hugo:PYTHONSUCKS http://localhost:5000/basic-protected
 
-echo -e "\n\n> Access JWT Protected Route Invalid Token (Error Expected):"
+echo -e "\n\n> Access Basic Protected Valid Password:"
+curl --user hugo:JSISTHEBEST http://localhost:5000/basic-protected
+
+echo -e "\n> Access JWT Protected Route Invalid Token (Error Expected):"
 curl -H "Authorization: Bearer ABCDEFGHIJKLMNOPQRSTUVWXYZ" http://localhost:5000/jwt-protected
 
-echo -e "\n\n> Access JWT Protected Route Valid Token:"
+echo -e "\n> Access JWT Protected Route Valid Token:"
 curl -H "Authorization: Bearer $JWT" http://localhost:5000/jwt-protected
 
 echo -e "\n> Access Admin Only:"
