@@ -68,7 +68,11 @@ def login():
         password = content["password"]
         if username in users.keys() and check_password_hash(users[username]["password"], password):
             #print("VALID USER")
-            users[username]["access_token"] = create_access_token(identity=users[username]["username"])
+            additional_claims = {"role": users[username]["role"]}
+            users[username]["access_token"] = create_access_token(
+                identity=users[username]["username"],
+                additional_claims=additional_claims
+            )
             return jsonify(access_token=users[username]["access_token"]), 200
         else:
             #print("INVALID USER")
@@ -79,7 +83,7 @@ def login():
 @jwt_required()
 def jwt_auth():
     #print("ACCESS GRANTED")
-    return "JWT Auth: Access Granted", 200
+    return jsonify("JWT Auth: Access Granted"), 200
 
 
 @app.route("/admin-only")
@@ -88,7 +92,7 @@ def admin():
     user = get_jwt_identity()
     role = users[user]["role"]
     if role == "admin":
-        return "Admin Access: Granted", 200
+        return jsonify("Admin Access: Granted"), 200
     else:
         return jsonify({"error": "Admin access required"}), 403
 
