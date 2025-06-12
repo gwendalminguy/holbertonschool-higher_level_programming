@@ -67,18 +67,18 @@ def login():
         username = content["username"]
         password = content["password"]
         if username in users.keys() and check_password_hash(users[username]["password"], password):
-            print("VALID USER")
+            #print("VALID USER")
             users[username]["access_token"] = create_access_token(identity=users[username]["username"])
             return jsonify(access_token=users[username]["access_token"]), 200
         else:
-            print("INVALID USER")
+            #print("INVALID USER")
             return jsonify({"message": "Invalid Username or Password"}), 401
 
 
 @app.route("/jwt-protected")
 @jwt_required()
 def jwt_auth():
-    print("ACCESS GRANTED")
+    #print("ACCESS GRANTED")
     return jsonify("JWT Auth: Access Granted"), 200
 
 
