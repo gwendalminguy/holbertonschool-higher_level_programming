@@ -41,7 +41,7 @@ def home():
 @app.route("/basic-protected")
 @auth.login_required
 def basic_protected():
-    return jsonify({"Basic Auth": "Access Granted"})
+    return jsonify({"Basic Auth": "Access Granted"}), 200
 
 
 @auth.verify_password
@@ -59,7 +59,7 @@ def login():
         if username in users.keys() and check_password_hash(users[username]["password"], password):
             print("VALID USER")
             users[username]["access_token"] = create_access_token(identity=users[username]["username"])
-            return jsonify(access_token=users[username]["access_token"])
+            return jsonify(access_token=users[username]["access_token"]), 200
         else:
             print("INVALID USER")
             return jsonify({"message": "Invalid Username or Password"}), 401
@@ -69,7 +69,7 @@ def login():
 @jwt_required()
 def jwt_auth():
     print("ACCESS GRANTED")
-    return jsonify("JWT Auth: Access Granted")
+    return jsonify("JWT Auth: Access Granted"), 200
 
 
 @app.route("/admin-only")
@@ -78,7 +78,7 @@ def admin():
     user = get_jwt_identity()
     role = users[user]["role"]
     if role == "admin":
-        return jsonify("Admin Access: Granted")
+        return jsonify("Admin Access: Granted"), 200
     else:
         return jsonify({"error": "Admin access required"}), 403
 
