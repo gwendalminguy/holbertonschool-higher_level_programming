@@ -52,7 +52,7 @@ def home():
 @app.route("/basic-protected")
 @auth.login_required
 def basic_protected():
-    return "Basic Auth": "Access Granted", 200
+    return "Basic Auth: Access Granted", 200
 
 
 @auth.verify_password
@@ -82,14 +82,13 @@ def login():
 
 @app.route("/jwt-protected")
 @jwt_required()
-def jwt_auth():
-    #print("ACCESS GRANTED")
+def jwt_protected():
     return "JWT Auth: Access Granted", 200
 
 
 @app.route("/admin-only")
 @jwt_required()
-def admin():
+def admin_only():
     user = get_jwt_identity()
     role = users[user]["role"]
     if role == "admin":
