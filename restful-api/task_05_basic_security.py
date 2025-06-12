@@ -5,6 +5,7 @@ Module containing basic Flask API.
 from flask import Flask, jsonify, request
 from flask_httpauth import HTTPBasicAuth
 from flask_jwt_extended import create_access_token
+from flask_jwt_extended import get_jwt
 from flask_jwt_extended import get_jwt_identity
 from flask_jwt_extended import jwt_required
 from flask_jwt_extended import JWTManager
@@ -51,7 +52,7 @@ def home():
 @app.route("/basic-protected")
 @auth.login_required
 def basic_protected():
-    return jsonify({"Basic Auth": "Access Granted"}), 200
+    return "Basic Auth": "Access Granted", 200
 
 
 @auth.verify_password
@@ -83,7 +84,7 @@ def login():
 @jwt_required()
 def jwt_auth():
     #print("ACCESS GRANTED")
-    return jsonify("JWT Auth: Access Granted"), 200
+    return "JWT Auth: Access Granted", 200
 
 
 @app.route("/admin-only")
@@ -92,7 +93,7 @@ def admin():
     user = get_jwt_identity()
     role = users[user]["role"]
     if role == "admin":
-        return jsonify("Admin Access: Granted"), 200
+        return "Admin Access: Granted", 200
     else:
         return jsonify({"error": "Admin access required"}), 403
 
