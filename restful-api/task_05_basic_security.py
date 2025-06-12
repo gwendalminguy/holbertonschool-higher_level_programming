@@ -79,7 +79,7 @@ def login():
 @jwt_required()
 def jwt_auth():
     #print("ACCESS GRANTED")
-    return jsonify("JWT Auth: Access Granted"), 200
+    return "JWT Auth: Access Granted", 200
 
 
 @app.route("/admin-only")
@@ -88,7 +88,7 @@ def admin():
     user = get_jwt_identity()
     role = users[user]["role"]
     if role == "admin":
-        return jsonify("Admin Access: Granted"), 200
+        return "Admin Access: Granted", 200
     else:
         return jsonify({"error": "Admin access required"}), 403
 
