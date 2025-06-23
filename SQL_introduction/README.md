@@ -36,10 +36,10 @@ This project is about learning to use SQL basics in MySQL.
 
 * [16-no_link.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_introduction/16-no_link.sql), a script listing all records where a specific column contains a value.
 
-* [101-avg_temperatures.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_introduction/101-avg_temperatures.sql), a script displaying the average temperature by city.
+* [101-avg_temperatures.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_introduction/101-avg_temperatures.sql), a script displaying the average temperature by city for the [temperatures.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_introduction/temperatures.sql) table dump.
 
-* [102-top_city.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_introduction/102-top_city.sql), a script displaying the 3 cities with the maximum average temperature in July and August.
+* [102-top_city.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_introduction/102-top_city.sql), a script displaying the 3 cities with the maximum average temperature in July and August for the [temperatures.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_introduction/temperatures.sql) table dump.
 
-* [103-max_state.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_introduction/103-max_state.sql), a script displaying the maximum temperature of each state.
+* [103-max_state.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_introduction/103-max_state.sql), a script displaying the maximum temperature of each state for the [temperatures.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_introduction/temperatures.sql) table dump.
 
 * [temperatures.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_introduction/temperatures.sql), the SQL file containing a table dump.
