@@ -17,7 +17,7 @@ def main():
     password = sys.argv[2]
     database = sys.argv[3]
     searched_state = sys.argv[4]
-    
+
     if "'" in searched_state:
         sys.exit()
 
