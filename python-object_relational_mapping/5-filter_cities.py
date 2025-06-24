@@ -39,11 +39,14 @@ def main():
     """.format(state_searched))
     query_rows = cur.fetchall()
 
-    for row_num in range(len(query_rows)):
-        if row_num != len(query_rows) - 1:
-            print(query_rows[row_num][0], end=", ")
-        else:
-            print(query_rows[row_num][0])
+    if len(query_rows) > 0:
+        for row_num in range(len(query_rows)):
+            if row_num != len(query_rows) - 1:
+                print(query_rows[row_num][0], end=", ")
+            else:
+                print(query_rows[row_num][0])
+    else:
+        print()
     cur.close()
     conn.close()
 
