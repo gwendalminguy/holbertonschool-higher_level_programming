@@ -10,6 +10,9 @@ def main():
     """
     Lists all records with specific name from a database.
     """
+    if len(sys.argv) != 5:
+        sys.exit()
+
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
