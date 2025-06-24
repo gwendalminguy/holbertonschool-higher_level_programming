@@ -1,4 +1,4 @@
-#!./venv/bin/python3
+#!/usr/bin/python3
 """
 Module containing function listing states from a database.
 """
