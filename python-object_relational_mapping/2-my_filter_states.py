@@ -8,7 +8,7 @@ import MySQLdb
 
 def main():
     """
-    Lists all states starting with 'N' ordered by id from a database.
+    Lists all records with specific name from a database.
     """
     username = sys.argv[1]
     password = sys.argv[2]
