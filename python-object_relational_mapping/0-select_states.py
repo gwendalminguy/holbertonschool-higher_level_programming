@@ -1,6 +1,6 @@
 #!./venv/bin/python3
 """
-...
+Module containing function listing states from a database.
 """
 import sys
 import MySQLdb
@@ -8,13 +8,20 @@ import MySQLdb
 
 def main():
     """
-    ...
+    Lists all states ordered by id in a database.
     """
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
-    
-    conn = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database, charset="utf8")
+
+    conn = MySQLdb.connect(
+        host="localhost",
+        port=3306, user=username,
+        passwd=password,
+        db=database,
+        charset="utf8"
+    )
+
     cur = conn.cursor()
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     query_rows = cur.fetchall()
