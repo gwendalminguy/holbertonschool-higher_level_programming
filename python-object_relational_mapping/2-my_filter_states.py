@@ -24,11 +24,11 @@ def main():
     )
 
     cur = conn.cursor()
-    cur.execute(f"""
+    cur.execute("""
         SELECT * FROM states
-        WHERE name = '{searched_state}'
+        WHERE name = '{}'
         ORDER BY id ASC
-    """)
+    """.format(searched_state))
     query_rows = cur.fetchall()
     for row in query_rows:
         print(row)
