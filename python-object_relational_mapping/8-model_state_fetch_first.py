@@ -7,6 +7,7 @@ from model_state import Base, State
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm.exc import NoResultFound
 
 
 def main():
