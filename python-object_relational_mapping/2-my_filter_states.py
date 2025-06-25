@@ -29,7 +29,7 @@ def main():
     cur = conn.cursor()
     cur.execute("""
         SELECT * FROM states
-        WHERE name = '{}'
+        WHERE name = BINARY '{}'
         ORDER BY id ASC
     """.format(searched_state))
     query_rows = cur.fetchall()
