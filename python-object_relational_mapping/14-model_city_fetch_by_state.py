@@ -34,10 +34,14 @@ def main():
 
     results = session.query(City, State).join(
         State, City.state_id == State.id
-    ).order_by(City.id)
+    ).order_by(City.id).all()
 
     for row in results:
-        print("{}: ({}) {}".format(row.State.name, row.City.id, row.City.name))
+        print("{}: ({}) {}".format(
+            row.State.name,
+            row.City.id,
+            row.City.name
+        ))
 
     session.close()
 
