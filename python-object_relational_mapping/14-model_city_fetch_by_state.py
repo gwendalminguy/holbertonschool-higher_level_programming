@@ -34,7 +34,7 @@ def main():
     session = Session()
 
     results = session.execute(
-        select(City, State).join(State, City.state_id == State.id)
+        select(City, State).join(State, City.state_id == State.id).order_by(City.id)
     )
 
     for row in results:
