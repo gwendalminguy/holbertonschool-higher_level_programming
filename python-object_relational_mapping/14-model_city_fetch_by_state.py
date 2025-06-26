@@ -14,7 +14,7 @@ from sqlalchemy.orm.exc import NoResultFound
 
 def main():
     """
-    Lists State objects containing 'a' from a database.
+    Lists City objects from a database.
     """
     username = sys.argv[1]
     password = sys.argv[2]
@@ -34,7 +34,9 @@ def main():
     session = Session()
 
     results = session.execute(
-        select(City, State).join(State, City.state_id == State.id).order_by(City.id)
+        select(City, State).join(
+            State, City.state_id == State.id
+        ).order_by(City.id)
     )
 
     for row in results:
