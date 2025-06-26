@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """
 Module containing class City.
 """
@@ -16,4 +15,4 @@ class City(Base):
     name = Column(String(128), nullable=False)
     state_id = Column(Integer, ForeignKey('states.id'), nullable=False)
     
-    state = relationship('State', backref='cities')
+    states = relationship('State', backref='cities')
