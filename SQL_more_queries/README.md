@@ -36,4 +36,12 @@ This project is about learning to use more SQL queries in MySQL.
 
 * [16-shows_by_genre.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_more_queries/16-shows_by_genre.sql)
 
+* [100-not_my_genres.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_more_queries/100-not_my_genres.sql)
+
+* [101-not_a_comedy.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_more_queries/101-not_a_comedy.sql)
+
+* [102-rating_shows.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_more_queries/102-rating_shows.sql)
+
+* [103-rating_genres.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_more_queries/103-rating_genres.sql)
+
 * [hbtn_0d_tvshows.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/SQL_more_queries/hbtn_0d_tvshows.sql)
