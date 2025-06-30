@@ -35,3 +35,5 @@ This project is about learning to use MySQLdb and SQLAlchemy.
 * [model_state.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-object_relational_mapping/model_state.py)
 
 * [model_city.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-object_relational_mapping/model_city.py)
+
+* [hbtn_0e_14_usa.sql](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-object_relational_mapping/hbtn_0e_14_usa.sql)
