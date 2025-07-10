@@ -4,11 +4,11 @@ const { argv } = require('node:process');
 const size = argv.length;
 let x = 0;
 
-function toInt(item, index, arr) {
+function toInt (item, index, arr) {
   arr[index] = parseInt(arr[index]);
 }
 
-function findSecond(arr) {
+function findSecond (arr) {
   let max = 0;
   let second = 0;
   for (let i = 2; i < arr.length; i++) {
