@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 const { argv } = require('node:process');
-const x = parseInt(argv[2]);
+let x = parseInt(argv[2]);
 
 function recursion (n) {
   if (n > 1) {
@@ -9,6 +9,10 @@ function recursion (n) {
   } else {
     return n;
   }
+}
+
+if (isNaN(x)) {
+	x = 1;
 }
 
 const result = recursion(x);
