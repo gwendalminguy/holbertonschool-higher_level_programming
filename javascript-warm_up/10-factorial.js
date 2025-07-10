@@ -12,7 +12,7 @@ function recursion (n) {
 }
 
 if (isNaN(x)) {
-	x = 1;
+  x = 1;
 }
 
 const result = recursion(x);
