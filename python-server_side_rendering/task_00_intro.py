@@ -9,18 +9,18 @@ def generate_invitations(template, attendees):
     Function generating invitations using template.
     """
     if not isinstance(template, str):
-        raise TypeError("Template must be a string.")
+        sys.exit("Template must be a string.")
     elif not isinstance(attendees, list):
-        raise TypeError("Attendees must be a list.")
+        sys.exit("Attendees must be a list.")
 
     for attendee in attendees:
         if not isinstance(attendee, dict):
-            raise TypeError("Attendees elements must be dictionaries.")
+            sys.exit("Attendees elements must be dictionaries.")
 
     if len(template) == 0:
-        raise ValueError("Template is empty, no output files generated.")
+        sys.exit("Template is empty, no output files generated.")
     elif len(attendees) == 0:
-        raise ValueError("No data provided, no output files generated.")
+        sys.exit("No data provided, no output files generated.")
 
     keys = ["name", "event_title", "event_date", "event_location"]
 
