@@ -34,7 +34,7 @@ def generate_invitations(template, attendees):
         for key in keys:
             try:
                 new = new.replace("{" + f"{key}" + "}", attendees[i][f"{key}"])
-            except TypeError, KeyError:
+            except (TypeError, KeyError):
                 new = new.replace("{" + f"{key}" + "}", "N/A")
 
         with open('output_{}.txt'.format(i + 1), 'w') as file:
