@@ -19,3 +19,7 @@ This project is about learning to use Document Object Model.
 * [7-script.js](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/javascript-dom_manipulation/7-script.js)
 
 * [8-script.js](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/javascript-dom_manipulation/8-script.js)
+
+* [100-script.js](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/javascript-dom_manipulation/100-script.js)
+
+* [101-script.js](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/javascript-dom_manipulation/101-script.js)
