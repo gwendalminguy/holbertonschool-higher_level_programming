@@ -23,7 +23,7 @@ def contact():
 
 @app.route('/items')
 def items():
-    filename = "./items.json"
+    filename = "./data/items.json"
     try:
         with open(filename, 'r', encoding="utf-8") as f:
             items = json.loads(f.read())["items"]
@@ -40,7 +40,7 @@ def products():
     message = None
 
     if source in ['json', 'csv']:
-        filename = f"./products.{source}"
+        filename = f"./data/products.{source}"
         with open(filename, 'r', encoding="utf-8") as f:
             if source == 'json':
                 items = json.loads(f.read())
@@ -49,7 +49,7 @@ def products():
                 for item in dictionaries:
                     items.append(item)
     elif source == "sql":
-        filename = "products.db"
+        filename = "./data/products.db"
         connection = sqlite3.connect(filename)
         connection.row_factory = sqlite3.Row
         cursor = connection.cursor()
