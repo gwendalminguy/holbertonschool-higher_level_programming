@@ -7,11 +7,15 @@
     {% include "header.html" %}
     <h1>Items List</h1>
     <p>This is what we sell.</p>
+	{% if items %}
 	<ul>
 	{% for item in items %}
 		<li>{{ item }}</li>
 	{% endfor %}
 	</ul>
+	{% else %}
+	<p>No items.</p>
+	{% endif %}
     {% include "footer.html" %}
 </body>
 </html>
