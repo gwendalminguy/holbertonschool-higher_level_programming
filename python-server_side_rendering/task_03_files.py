@@ -50,9 +50,7 @@ def products():
         if id:
             id = int(id)
             valid = [item["id"] for item in items]
-            print(valid)
             if id not in valid:
-                print(id)
                 message = "Product not found"
     else:
         message = "Wrong source"
