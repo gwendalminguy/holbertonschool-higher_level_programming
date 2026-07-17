@@ -1,2 +1,3 @@
 ## Higher Level Programming
-This is the higher level programming repository.
+
+This is the Higher Level Programming repository.
