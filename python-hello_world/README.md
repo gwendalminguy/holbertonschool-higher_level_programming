@@ -1,6 +1,6 @@
 ## Python - Hello World
 
-This project is about learning to use python basics such as printing formatted strings, concatenation and slicing.
+This project is about learning to use python basics such as formatted strings, concatenation and slicing.
 
 * [2-print.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-hello_world/2-print.py), a script printing a simple sentence.
 
