@@ -1,6 +1,6 @@
 ## Python - Import Modules
 
-This project is about learning to import modules in Python
+This project is about learning to use imports and modules in Python.
 
 * [0-add.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-import_modules/0-add.py), a script importing a single function from a file.
 
