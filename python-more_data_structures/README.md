@@ -1,6 +1,6 @@
 ## Python - More Data Structures
 
-This project is about learning to use more oython data structures such as sets and dictionaries.
+This project is about learning to use more Python data structures such as sets and dictionaries.
 
 * [0-square_matrix_simple.py](https://github.com/gwendalminguy/holbertonschool-higher_level_programming/tree/main/python-more_data_structures/0-square_matrix_simple.py), a function computing the square value of each integer of a matrix.
 
